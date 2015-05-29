@@ -1,0 +1,21 @@
+{
+  "name": "io_mp_stats",
+  "version": "0.0.0",
+  "authors": [
+    "carriejiang <carriejiang03@gmail.com>"
+  ],
+  "description": "Performance statistics for Solaris SPARC server usage",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "d3": "3.4.11",
+    "bootstrap": "3.2.0",
+    "jquery": "2.1.1"
+  }
+}

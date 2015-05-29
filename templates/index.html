@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dashboard</title>
+	<link rel="stylesheet" href="./static/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  	<link rel="stylesheet" href="./static/css/keen-dashboards.css">
+  	<link rel="stylesheet" href="./static/node_modules/dc/web/css/dc.css">
+  	<link rel="stylesheet" href="./static/css/custom.css">
+</head>
+<body class="application">
+	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="./">CPU Stats Dashboard</a>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container-fluid">
+		<div class="row">
+		<!-- Row Chart -->
+		<div class="col-sm-6">
+			<div class="chart-wrapper">
+				<div class="chart-title">Stats per VCPU</div>
+				<div class="chart-stage">
+					<div id="row-chart"></div>
+				</div>
+			</div>
+		</div>
+		<!-- End Row Chart -->
+
+		<!-- Table -->
+		<div class='col-sm-6'>
+			<div class="chart-wrapper">
+			<table class = 'table table-hover dc-data-table' id='table-stats'>
+				<thead>
+				  <tr class='header'>
+					<th>CPU</th>
+					<th>xcal</th>
+					<th>intr</th>
+					<th>ithr</th>
+					<th>csw</th>
+					<th>icsw</th>
+				  </tr>
+				</thead>
+			</table>
+			</div>
+		</div>
+		<!-- End Table -->
+
+		</div>
+	</div>	
+
+	<script src="./static/bower_components/jquery/dist/jquery.min.js"></script>
+  	<script src="./static/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  	<script src="./static/node_modules/crossfilter/crossfilter.js"></script>
+  	<script src="./static/bower_components/d3/d3.js"></script>
+  	<script src="./static/node_modules/dc/dc.js"></script>
+  	<script src="./static/node_modules/queue-async/queue.js"></script>
+
+  	<script src="./static/js/keen.min.js"></script>
+  	<script src='./static/js/graphs.js' type='text/javascript'></script>
+
+</body>
+</html>
