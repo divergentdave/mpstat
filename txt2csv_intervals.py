@@ -19,7 +19,7 @@ def convert(inputFile, outputFile):
    			continue
    			
 		try:
-			timeStamp = datetime.datetime.strptime(line, "%A, %B %j, %Y %H:%M:%S %p %Z").time().strftime('%H:%M:%S')
+			timeStamp = datetime.datetime.strptime(line, "%A, %B %j, %Y %I:%M:%S %p %Z").time().strftime('%H:%M:%S')
 			headerLine = True
 		except:
 			out_txt.writerow(line.split()+[timeStamp])
